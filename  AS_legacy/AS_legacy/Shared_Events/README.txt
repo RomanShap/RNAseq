@@ -1,0 +1,2 @@
+This folder contains excel files(split by splicing event type) that carry information about shared events between KO samples based on differential analysis of vast_tools.
+To produce these files we take the output of the differential analysis from vast-tools pack and process it with shared_splicing_events.R
