@@ -73,3 +73,5 @@ saveRDS(count_data_gene, count_rds_path)
 message("Saved gene-level counts to: ", count_rds_path)
 COUNT_DATA_GENE <- count_data_gene
 rm(count_data_gene, count_list, count_data_ENST, tx2gene)
+
+# stop("Finisjed 01_kallisto_to_counts.R script for testing purposes.")
