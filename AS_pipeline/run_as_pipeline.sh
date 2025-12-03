@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # run_as_pipeline.sh
 #
-# Shell wrapper for the AS_pipeline_v2.  Executes the main R script with a
+# Shell wrapper for the AS_pipeline.  Executes the main R script with a
 # configuration file.  When run without arguments it defaults to
 # config/config.yml under the project root.
 
