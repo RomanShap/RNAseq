@@ -9,7 +9,34 @@
 # `output/` reside.  The pipeline root is inferred from the location of this
 # file.
 
-## Load required packages ------------------------------------------------------
+## -------------------------------------------------------------------
+## Load required libraries for the AS pipeline
+## -------------------------------------------------------------------
+suppressPackageStartupMessages({
+  library(optparse)        # command-line parsing
+  library(yaml)            # configuration files
+
+  library(dplyr)           # data manipulation
+  library(readr)           # fast I/O
+  library(tidyr)           # data reshaping
+  library(stringr)         # string utilities
+  library(purrr)           # functional programming helpers
+  library(forcats)         # factor handling
+
+  library(ggplot2)         # plotting
+  # library(ggrepel)       # uncomment if you use repelled labels
+
+  ## For overlaps/UpSet plots
+  library(ComplexUpset)
+
+  ## For heatmaps and similar visualizations
+  library(ComplexHeatmap)
+  library(circlize)
+
+  ## For GO/functional enrichment (if used in this pipeline)
+  library(clusterProfiler)
+  library(org.Hs.eg.db)
+})
 suppressMessages({
   if (!requireNamespace("yaml", quietly = TRUE)) {
     stop("Package 'yaml' is required but not installed")
